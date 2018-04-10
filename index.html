@@ -7,9 +7,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/scripts.js">
-
+    <script type="text/javascript" src="js/scripts.js" async>
     </script>
+    <script type="text/javascript" src="js/nasa-script.js"async></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <title>Tommorow's Satire</title>
   </head>
   <body>
@@ -74,11 +78,22 @@
         </div>
       </div>
       <div class="row justify-content-end">
-        <div class="col-4" style="background:purple;">
-          87
+        <div class="col-4">
+          <div class="nasa">
+          <header>
+            <h2>NASA Image of the Day.</h2>
+          </header>
+        <img id="apod_img_id" width="315px"/>
+
+        <iframe id="apod_vid_id" type="text/html" width="315" height="315" frameborder="0"></iframe>
+        <p id="copyright"></p>
+
+        <h4 id="apod_title"></h4>
+        <p id="apod_explaination"></p>
+      </div>
         </div>
-        <div class="col-4" style="background:magenta;">
-          98
+        <div class="col-4" >
+
         </div>
         <div class="col-4" style="background:cyan;">
           999
@@ -87,11 +102,15 @@
           4532
         </div>
       </div>
+      <div id="test">
+
+      </div>
     </div>
+
 
       <footer class="footer">
         <div class="container">
-          <span class="text-muted">Place sticky footer content here.</span>
+          <span class="text-muted">&copy2018 Jahan Walsh .</span>
         </div>
       </footer>
 

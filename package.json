@@ -1,0 +1,24 @@
+{
+  "name": "news-site",
+  "version": "1.0.0",
+  "description": "A news Site that pulls json Data from NewsApi",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwalsh370/news-app.git"
+  },
+  "author": "Jahan Walsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwalsh370/news-app/issues"
+  },
+  "homepage": "https://github.com/jwalsh370/news-app#readme",
+  "dependencies": {
+    "newsapi": "^2.2.2",
+    "parse-json": "^4.0.0",
+    "requirejs": "^2.3.5"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "news-site",
+  "description": "A news Site that pulls json Data from NewsApi",
+  "main": "index.js",
+  "authors": [
+    "Jahan Walsh"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jwalsh370/news-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
