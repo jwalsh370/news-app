@@ -13,63 +13,38 @@
           });
 
           function processData(data) {
-            var articleItems = [];
-
-
+             var articleItems = [];
             for (var i = 0; i < data.articles.length; i++) {
               var author = data.articles[i].author;
               var title = data.articles[i].title;
               var description = data.articles[i].description;
               var artUrl = data.articles[i].url;
               var image = data.articles[i].urlToImage;
-              var published = data.articles[i].publishedAt;
-
-              articleItems.push(data);
 
 
-
-
-
-
-              var $author = $('<h4 class="author">Author: ' + author + "</h4 >");
+              var $author = $('<div class="author">Author: ' + author + "</div>");
               var $title = $(
-                "<a href=" + artUrl + '><h2 class="title">' + title + "</h2></a>"
+                "<a href=" + artUrl + '><div class="title">' + title + "</div></a>"
               );
               var $description = $(
-                '<p class="description">' +
+                '<div class="description">Description:' +
                   description +
-                  "</p>"
+                  "</div>"
               );
               var $image = $(
-                  '<img class="image-fluid" src="' +
-                  image + '">');
-              // var $published = $(
-              //   "<a href=" +
-              //     artUrl +
-              //     '><div class="published">' +
-              //     published +
-              //     "</div ></a>"
-              // );
-
-              // $(".services").append($author, $description, $image);
-
+                  '<img class="image" src="' +
+                  image + '"></>');
 
             }
+            $(".title").append($title);
+            $(".author").append($author);
+            $(".description").append($description);
+            $(".image").append($image);
+
+            // $(".test").append($title,$author,$description,$image);
 
 
+            console.log(image);
+            console.log(title);
 
-          $.each(articleItems, function(key, data){
-            console.log(articleItems);
-
-          $(".title").append($title);
-          $(".author").append($author);
-          $(".description").append($description);
-          $(".img").append($image);
-
-
-
-
-
-        });
-
-      }
+          }
